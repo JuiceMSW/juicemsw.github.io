@@ -16,20 +16,76 @@
 <body>
     <div class="navBar">
         <img class="logo" src="./static/images/MandalaMonster.png">
-        <input type="radio" name="button" class="navButton" checked id="homeButton" value="1" onclick="scrollToDiv('home')">
+        <input type="radio" name="navButton" class="navButton" checked id="homeButton" value="1" onclick="scrollToDiv('home')">
         <label class=navButtonText for="homeButton">Home</label>
-        <input type="radio" name="button" class="navButton" id="skillsButton" value="1" onclick="scrollToDiv('skills')">
+        <input type="radio" name="navButton" class="navButton" id="skillsButton" value="2" onclick="scrollToDiv('skills')">
         <label class=navButtonText for="skillsButton">Skills</label>
-        <input type="radio" name="button" class="navButton" id="projectsButton" value="1" onclick="scrollToDiv('projects')">
+        <input type="radio" name="navButton" class="navButton" id="projectsButton" value="3" onclick="scrollToDiv('projects')">
         <label class=navButtonText for="projectsButton">Projects</label>
-        <input type="radio" name="button" class="navButton" id="aboutButton" value="1" onclick="scrollToDiv('about')">
+        <input type="radio" name="navButton" class="navButton" id="aboutButton" value="4" onclick="scrollToDiv('about')">
         <label class=navButtonText for="aboutButton">About Me</label>
     </div>
     <div class="contentDiv">
-        <div class="contentSection" id="home"></div>
-        <div class="contentSection" id="skills"></div>
-        <div class="contentSection" id="projects"></div>
-        <div class="contentSection" id="about"></div>
+        <div class="contentCards" id="home"></div>
+        <div class="contentCards" id="skills">
+            <div class="row">
+                <div class="column">    
+                <div class="contentCard">
+                    <div class="photo"></div>
+                        <div class="title">Java</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contentCard">
+                        <div class="photo"></div>
+                        <div class="title">Python</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contentCard">
+                        <div class="photo"></div>
+                        <div class="title">Web Development</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contentCard">
+                        <div class="photo"></div>
+                        <div class="title">C</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contentCard">
+                        <div class="photo"></div>
+                        <div class="title">C++</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contentCard">
+                        <div class="photo"></div>
+                        <div class="title">Databases</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="contentCard">
+                        <div class="photo"></div>
+                        <div class="title">Unix/Shell</div>
+                        <div class="content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentCards" id="projects">
+
+        </div>
+        <div class="contentCards" id="about">
+
+        </div>
     </div>
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/main.js"></script>
     <script src="./scripts/jquery-3.5.1.min.js"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="./static/favicon/apple-touch-icon.png">
@@ -15,7 +14,7 @@
 </head>
 <body>
     <div class="navBar">
-        <img class="logo" src="./static/images/MandalaMonster.png">
+        <img class="logo" src="./static/images/logo.png">
         <input type="radio" name="navButton" class="navButton" checked id="homeButton" value="1" onclick="scrollToDiv('home')">
         <label class=navButtonText for="homeButton">Home</label>
         <input type="radio" name="navButton" class="navButton" id="skillsButton" value="2" onclick="scrollToDiv('skills')">
@@ -27,56 +26,108 @@
     </div>
     <div class="contentDiv">
         <div class="contentCards" id="home"></div>
-        <div class="contentCards" id="skills">
-            <div class="row">
-                <div class="column">    
-                <div class="contentCard">
-                    <div class="photo"></div>
-                        <div class="title">Java</div>
-                        <div class="content"></div>
-                    </div>
+        <div class="contentCards" id="skills">    
+            <div class="contentCard">
+                <div class="title">Java</div>
+                <div class="photo">
+                    <img src="./static/images/ratings0.png">
                 </div>
-                <div class="column">
-                    <div class="contentCard">
-                        <div class="photo"></div>
-                        <div class="title">Python</div>
-                        <div class="content"></div>
-                    </div>
+                <div class="content">
+                    <p>
+                        <br>
+                        I have been working with Java for at least 4 years, as it was my introductory language into CS.
+                        <br></br>
+                        I am extremely comfortable with Java and have used it in a variety of ways,
+                        but mainly have mainly focused on games.
+                    </p>
                 </div>
-                <div class="column">
-                    <div class="contentCard">
-                        <div class="photo"></div>
-                        <div class="title">Web Development</div>
-                        <div class="content"></div>
-                    </div>
+            </div>
+            <div class="contentCard">
+                <div class="title">Python</div>
+                <div class="photo">
+                    <img src="./static/images/ratings1.png">
                 </div>
-                <div class="column">
-                    <div class="contentCard">
-                        <div class="photo"></div>
-                        <div class="title">C</div>
-                        <div class="content"></div>
-                    </div>
+                <div class="content">
+                    <p>
+                        <br>
+                        I have worked with Python for 3 years.
+                        <br></br>
+                        Python is great to use in making quick scripts and tools to help my productivity.
+                        <br></br>
+                        I've also used it in developing web servers and databases.
+                    </p>
                 </div>
-                <div class="column">
-                    <div class="contentCard">
-                        <div class="photo"></div>
-                        <div class="title">C++</div>
-                        <div class="content"></div>
-                    </div>
+            </div>
+            <div class="contentCard">
+                <div class="title">Web</div>
+                <div class="photo">
+                    <img src="./static/images/ratings2.png">
                 </div>
-                <div class="column">
-                    <div class="contentCard">
-                        <div class="photo"></div>
-                        <div class="title">Databases</div>
-                        <div class="content"></div>
-                    </div>
+                <div class="content">
+                    <p>
+                        <br>
+                        I have been making websites since highschool, and have become very familiar with html and its related languages.
+                        <br></br>
+                        I am comfortable using JavaScript and building front-ends to hook up to Python back-ends.
+                    </p>
                 </div>
-                <div class="column">
-                    <div class="contentCard">
-                        <div class="photo"></div>
-                        <div class="title">Unix/Shell</div>
-                        <div class="content"></div>
-                    </div>
+            </div>
+            <div class="contentCard">
+                <div class="title">C</div>
+                <div class="photo">
+                    <img src="./static/images/ratings3.png">
+                </div>
+                <div class="content">
+                    <p>
+                        C is the language that I have been using throughout my college education.
+                        <br></br>
+                        While C can be slow to work with at times, its low level capabilities make it ideal for any OS projects I have done.
+                    </p>
+                </div>
+            </div>
+            <div class="contentCard">
+                <div class="title">C++</div>
+                <div class="photo">
+                    <img src="./static/images/ratings4.png">
+                </div>
+                <div class="content">
+                    <p>
+                        I have been working with Java for at least 4 years, as it was my introductory language into CS.
+                    </p>
+                    <p>
+                        I am extremely comfortable with Java and have used it in a variety of ways,
+                        but mainly have mainly focused on games.
+                    </p>
+                </div>
+            </div>
+            <div class="contentCard">
+                <div class="title">Databases</div>
+                <div class="photo">
+                    <img src="./static/images/ratings5.png">
+                </div>
+                <div class="content">
+                    <p>
+                        I have been working with Java for at least 4 years, as it was my introductory language into CS.
+                    </p>
+                    <p>
+                        I am extremely comfortable with Java and have used it in a variety of ways,
+                        but mainly have mainly focused on games.
+                    </p>
+                </div>
+            </div>
+            <div class="contentCard">
+                <div class="title">Unity/C#</div>
+                <div class="photo">
+                    <img src="./static/images/ratings6.png">
+                </div>
+                <div class="content">
+                    <p>
+                        I have been working with Java for at least 4 years, as it was my introductory language into CS.
+                    </p>
+                    <p>
+                        I am very comfortable with Java and have used it in a variety of ways,
+                        but mainly have mainly focused on games.
+                    </p>
                 </div>
             </div>
         </div>

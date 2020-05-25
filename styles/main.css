@@ -134,7 +134,6 @@ i {
 
 .contentSheet {
     margin: 10px;
-    min-height: fit-content;
     flex: 0 1 100%;
     background-color: white;
     border-radius: 5px;

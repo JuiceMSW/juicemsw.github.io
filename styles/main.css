@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    background: darkslategray;
+}
+
 .navBar {
     z-index: 100;
     position: fixed;
@@ -23,6 +27,11 @@
 
 .navButton {
     display: none;
+}
+
+i {
+    height: 100%;
+    width: 100%;
 }
 
 .navButtonText {
@@ -44,13 +53,6 @@
     background: darkslategray;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .logo {
-        display: none;
-    }
-}
-
 .contentDiv {
     margin-top: 50px;
 }
@@ -60,24 +62,35 @@
     background-size: cover;
 }
 
-#skills {
-    background: darkslategray;
-}
-
-#projects {
-    background: green;
-}
-
-#about {
-    background: orange;
-}
-
 .logo {
     height: 50px;
     width: auto;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#linkedin {
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+
+#github {
+    position: absolute;
+    top: 0;
+    left: 116.25px;
+}
+
+#facebook {
+    position: absolute;
+    top: 0;
+    left: calc(116.25px + 29.063px + 10px);
+}
+
+.icon {
+    height: 50px;
+    padding: 10px 0;
 }
 
 .contentCards {
@@ -92,12 +105,14 @@
 }
 
 .contentCard {
-    margin: 10px;
+    height: 48%;
     flex: 0 1 20%;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
+    margin: 1vh;
     box-shadow: 2px 2px 10px black;
+    overflow-y: scroll;
 }
 
 .title {
@@ -107,12 +122,67 @@
     text-align: center;
 }
 
-.photo {
+.contentCard .photo {
     text-align: center;
 }
 
 .content {
     font-family: 'Work Sans', sans-serif;
     font-weight: 900;
-    font-size: 1.25vw;
+    font-size: 1.2vw;
+}
+
+.contentSheet {
+    margin: 10px;
+    min-height: fit-content;
+    flex: 0 1 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.contentSheet .title {
+    padding-bottom: 20px;
+}
+
+.contentSheet .photo {
+    width: 25%;
+    float: left;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.contentSheet .photo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contentSheet .content {
+    max-width: 75%;
+    float: left;
+    padding-left: 10px;
+}
+
+footer {
+    background: teal;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.2vw;
+    padding: 10px;
+}
+
+ul {
+    padding: 0px 20px 20px 20px;
+}
+
+.subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
 }

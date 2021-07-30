@@ -50,15 +50,6 @@ a {
     color: orange;
 }
 
-.navButton:checked {
-    color: white;
-    background: darkslategray;
-}
-
-.contentDiv {
-    margin-top: 50px;
-}
-
 #home {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), darkslategray), url("../static/images/coverPhoto.jpg") no-repeat center;
     background-size: cover;
